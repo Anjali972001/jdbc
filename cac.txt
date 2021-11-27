@@ -1,0 +1,22 @@
+public class classA {
+ void fun() {
+  int val = 84;
+  // local-method inner class
+  class InnerMeth {
+   public void disp() {
+     System.out.println("Inner class method: "+val);   
+     }
+    } // end of inner class   
+    // Accessing the inner class
+   InnerMeth in = new InnerMeth(); in .disp();
+  }
+
+  public static void main(String argu[]) {
+   classA out = new classA();
+   out.fun();
+   System.out.println("Program done….");
+
+  }
+ }
+//Inner class method: 84
+//Program done….
